@@ -29,13 +29,16 @@ function randomQoutes() {
 }
 
 $(document).ready(function(){
+        randomQoutes();
     $('.newquote').on("click", function(){
         randomQoutes();
         var setColor = chooseColor();
         $(this).css("background-color", setColor);
-        $('.shareTwitter').css("background-color", setColor);
+       // $('.shareTwitter').css("background-color", setColor);
         $('body').css("background-color", setColor);
         $('p').css("color", setColor);
     });
 
 });
+
+// api twitter nie dziala sprawdzic
